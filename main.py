@@ -16,9 +16,9 @@ circulo = pygame.transform.scale(circulo, (125,125))
 equis = pygame.transform.scale(equis, (125,125))
 # Hacer una matriz bidimensional de tuplas donde estaran las coordenadas de los elementos(X y O y fondo)
 # TODO: NO dejarlo para después
-coordenadas = [[(0,0),(0,0),(0,0)],
-               [(0,0),(0,0),(0,0)],
-               [(0,0),(0,0),(0,0)]]
+coordenadas = [[(40,0),(165,0),(290,0)],
+               [(40,175),(165,175),(290,175)],
+               [(40,300),(165,300),(290,300)]]
 
 # Matriz para almacenar jugadas
 tablero = [['','',''],
@@ -39,7 +39,7 @@ while not game_over:
   # Toca graficar los elementos
   screen.blit(fondo, (0,0)) # TODO: Quitar lo estático
   screen.blit(circulo, (40,50))
-  screen.blit(equis, (160,165))
+  screen.blit(equis, (165,165))
   #Actualizar la pantalla(screen)
   pygame.display.update()
 
