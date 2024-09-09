@@ -10,17 +10,18 @@ screen = pygame.display.set_mode((450,450))
 pygame.display.set_caption("3 en raya gaaa")
 # Cargar recursos estaticos para nuestro juegozu
 fondo = pygame.image.load('static/board.jpeg')
+# fondo = pygame.image.load('static/board2.png') # Fondo alternativo
 circulo = pygame.image.load('static/circulito.png')
 equis = pygame.image.load('static/equis.png')
 # Escalar las imagenes pq estan muy grandes
 fondo = pygame.transform.scale(fondo, (450,450))
-circulo = pygame.transform.scale(circulo, (125,125))
-equis = pygame.transform.scale(equis, (125,125))
+circulo = pygame.transform.scale(circulo, (110,110))
+equis = pygame.transform.scale(equis, (110,110))
 # Hacer una matriz bidimensional de tuplas donde estaran las coordenadas de los elementos(X y O y fondo)
 # TODO: NO dejarlo para después
-coordenadas = [[(40,50),(165,50),(290,50)],
-               [(40,175),(165,175),(290,175)],
-               [(40,300),(165,300),(290,300)]]
+coordenadas = [[(42,40),(170,40),(300,40)],
+               [(42,175),(170,175),(300,175)],
+               [(42,300),(170,300),(300,300)]]
 
 # Matriz para almacenar jugadas
 tablero = [['','',''],
