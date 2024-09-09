@@ -24,8 +24,9 @@ git clone https://github.com/davidmanueldev/tic-tac-toe-pygame.git
 
 ```bash
 python -m venv tres-en-raya
-cd tres-en-raya/
 ```
+> [!IMPORTANT]
+> En tu editor recuerda activar el entorno virtual
 
 > [!IMPORTANT]
 > En Linux/MacOS es python3 y pip3
